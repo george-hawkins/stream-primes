@@ -10,6 +10,8 @@ object ConvergingSequences extends App {
     }
     // `guesses` simply can't be anything other that lazy - if you try val you'll get:
     // "Error:(11, 55) forward reference extends over definition of value guesses"
+    // Fpr a more detailed explanation (both of the Scala and Java aspects) see the comment in sqrtStream in:
+    // https://github.com/george-hawkins/square-root-stream/blob/master/src/main/java/net/betaengine/SquareRootStream.java
     lazy val guesses: MyStream[Double] = MyStream.cons(1, (guesses map improve), "guesses")
     guesses
   }
