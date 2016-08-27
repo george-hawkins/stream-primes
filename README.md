@@ -11,7 +11,7 @@ You can jump straight to the [Output section](#output) to see the output for the
 
 At the end there's also an [Extras section](#extras) that points out how much work occurs to create a filtered stream even if there's no terminal operation consuming values.
 
-**Update:** this project now also includes  [`ConvergingSequences.scala`](src/main/scala/week2/ConvergingSequences.scala) (in addition to [`StreamPrimes.scala`](src/main/scala/week2/StreamPrimes.scala)). This class can be used to demonstrate the affect that making `tail` lazy or not has on working with converging sequences.
+**Update:** this project now also includes  [`ConvergingSequences.scala`](src/main/scala/week2/ConvergingSequences.scala) (in addition to [`StreamPrimes.scala`](src/main/scala/week2/StreamPrimes.scala)). This class can be used to demonstrate the affect that making `tail` lazy or not has on working with converging sequences. For a Java implementation of this (where you can see the call-by-name and lazy evaluation being handled in a more explicit fashion) see my [square-root-stream](https://github.com/george-hawkins/square-root-stream) project.
 
 Implementation
 --------------
